@@ -1,0 +1,26 @@
+{
+  "name": "cycucupom",
+  "version": "1.0.0",
+  "description": "Page Object Model with Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-prod-test": "npx cypress run --spec cypress/e2e --config-file prodConfig.js",
+    "cypress-stage-test": "npx cypress run --spec cypress/e2e --config-file stageConfig.js",
+    "cypress-run-cloud": "npx cypress run --record --key 8022fa30-c3e6-4e53-808e-3c99cdb61c9d"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.6.2",
+    "dotenv": "^16.3.1",
+    "esbuild": "^0.19.11"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/stepDefinitions/*.js",
+    "filterSpecs": true,
+    "omitFiltered": true
+  }
+}
