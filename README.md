@@ -2,6 +2,9 @@
 
 ![image](https://github.com/rvranjan-codeSpace/Cypress-Cucumber-Skeleton/assets/12593934/bbd131bd-0774-4fdc-b377-5b0b626742b3)
 
+This is the boiler plate skeleton code to create a cucumber project with cypress 10 and above .
+Note there are no integration folder and index.js starting from cypress 10
+
 ## Please add the following dependecies
 1. "@bahmutov/cypress-esbuild-preprocessor"
 2. "@badeball/cypress-cucumber-preprocessor"
